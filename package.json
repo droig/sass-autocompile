@@ -10,8 +10,8 @@
         "type": "git",
         "url": "https://github.com/Darius2652/sass-autocompile.git"
     },
-    "version": "0.0.7",
-    "publisher": "darius2652",
+    "version": "0.1.0",
+    "publisher": "droig",
     "homepage": "",
     "engines": {
         "vscode": "^1.10.0"
@@ -56,6 +56,11 @@
                     "type": "string",
                     "default": "",
                     "description": "Target directory for generated files. If relative, will be based on currently opened folder in VS Code."
+                },
+                "sass_autocompile.mainFile": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Path to main SASS file: Tell the compiler to compile just this one file."
                 }
             }
         },

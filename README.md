@@ -22,6 +22,7 @@ This extension contributes the following settings:
 * `sass_autocompile.formats`: specify extensions and formats for exported files.
 * `sass_autocompile.targetDir`: define target directory for generated files.
 * `sass_autocompile.excludeRegex`: exclude files from compilation with regular expression
+* `sass_autocompile.mainFile`: path to main SASS file: tell the compiler to compile just this one file.
 
 ## Release Notes
 
@@ -32,5 +33,8 @@ This extension contributes the following settings:
 
 ## [0.0.7]
 - Clear output after each save
+
+## [0.1.0]
+- Added main SASS setting
 
 **Enjoy!**

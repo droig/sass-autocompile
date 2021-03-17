@@ -156,6 +156,13 @@ var CompileSassExtension = function() {
                         mainFile: null
                     };
 
+                    if (configuration.mainFile) {
+                        const wsFolder = vscode.workspace.workspaceFolders?.find( folder => document.fileName.indexOf(folder.uri.fsPath) >= 0);
+                        const mainFile = pathModule.join(wsFolder.uri.fsPath, configuration.mainFile);
+                        if (fs.existsSync(mainFile))
+                            file.mainFile = mainFile;
+                    }
+
                     let next = () => {
                         if (configuration.compileAfterSave || file.compileAfterSave || file.mainFile) {
                             
